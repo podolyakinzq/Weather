@@ -15,7 +15,8 @@ class NetworkManager {
     
     func fetchData(_ lat: String, _ lon: String) async throws -> OpenWeather {
         guard let url = URL(
-            string: Link.firstPartURL.rawValue
+            string:
+            Link.firstPartURL.rawValue
             + lat
             + Link.secondPartURL.rawValue
             + lon
